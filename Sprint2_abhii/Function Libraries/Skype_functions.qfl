@@ -1,0 +1,47 @@
+﻿'Function for Opening the broser with skype url
+Function Open_Skype
+url="https://web.skype.com/"
+systemutil.Run "chrome",url
+End Function
+
+'Function for logging in to skype
+Function Login
+'Synchronization Point
+Browser("name:=Sign in to Skype").Sync
+
+'Improting data from external excel file
+DataTable.ImportSheet "C:\Users\abhis\OneDrive\Desktop\Sprint 2\Test Data\Test_data.xls", "Sheet1", "Global"
+
+'Checkpoint for Validating Skype logo on login page
+c=Browser("name:=Sign in to Skype").Page("title:=Sign in to Skype").Image("file name:=44_08ed657e48f1458641b5f879d82004cd.png").GetROProperty("visible")
+If c="True" Then
+	'Generating Pass report if logo is visible
+	Reporter.ReportEvent micPass,"Skype Logo Verified","Skype logo is visible on login page"
+End If
+
+'Implementing With Statement
+With Browser("name:=Sign in to Skype")
+	.Sync
+	Wait(3)
+
+	With .Page("title:=Sign in to Skype")
+		.WebEdit("name:=loginfmt").Set DataTable("Email", dtGlobalSheet)
+		.WebButton("type:=submit").Click 
+		.WebEdit("name:=passwd").SetSecure DataTable("Password", dtGlobalSheet)
+		.WebButton("name:=Sign in").Click
+	End With
+End With
+
+'Checkpoint for validating login functionality
+'z=Browser("name:=Skype").Page("title:=Skype").WebElement("xpath:=//DIV[1]/DIV[1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[1]").GetROProperty("visible")
+'If z="True" Then
+'       'Generating Done report if login is successful
+'	Reporter.ReportEvent micDone ,"Login Successful","The user has logged in successfully."
+'End If
+End Function
+
+'Function for Closing Browser
+Function Close_Browser
+'Closing the browser
+Browser("opentitle:=Sign in to Skype").Close
+End Function

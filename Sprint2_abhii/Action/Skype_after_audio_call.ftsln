@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0-UFT_2021_GA
+Project("") = "Vedio_call", "Vedio_call\Test.tsp", "0655CF10-C629-4F53-BC62-EA90A92611A0"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\abhis\OneDrive\Desktop\Sprint 2\Action\Vedio_call\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+	EndProjectSection
+EndProject
+Project("") = "Output_value", "Output_value\Test.tsp", "84AC9FD0-6ABE-4F26-A03F-FFCF661EEA7A"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\abhis\OneDrive\Desktop\Sprint 2\Action\Output_value\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+	EndProjectSection
+EndProject
+Project("") = "Update_profile_pic", "Update_profile_pic\Test.tsp", "FC7147D3-FD2B-4310-A9CB-8C027C2F1EE3"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\abhis\OneDrive\Desktop\Sprint 2\Action\Update_profile_pic\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		0655CF10-C629-4F53-BC62-EA90A92611A0.Debug|Any CPU.Build.0 = Debug|Any CPU
+		0655CF10-C629-4F53-BC62-EA90A92611A0.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		0655CF10-C629-4F53-BC62-EA90A92611A0.Release|Any CPU.Build.0 = Release|Any CPU
+		0655CF10-C629-4F53-BC62-EA90A92611A0.Release|Any CPU.ActiveCfg = Release|Any CPU
+		84AC9FD0-6ABE-4F26-A03F-FFCF661EEA7A.Debug|Any CPU.Build.0 = Debug|Any CPU
+		84AC9FD0-6ABE-4F26-A03F-FFCF661EEA7A.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		84AC9FD0-6ABE-4F26-A03F-FFCF661EEA7A.Release|Any CPU.Build.0 = Release|Any CPU
+		84AC9FD0-6ABE-4F26-A03F-FFCF661EEA7A.Release|Any CPU.ActiveCfg = Release|Any CPU
+		FC7147D3-FD2B-4310-A9CB-8C027C2F1EE3.Debug|Any CPU.Build.0 = Debug|Any CPU
+		FC7147D3-FD2B-4310-A9CB-8C027C2F1EE3.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		FC7147D3-FD2B-4310-A9CB-8C027C2F1EE3.Release|Any CPU.Build.0 = Release|Any CPU
+		FC7147D3-FD2B-4310-A9CB-8C027C2F1EE3.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

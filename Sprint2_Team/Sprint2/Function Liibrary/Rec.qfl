@@ -1,0 +1,4 @@
+﻿Function RecoveryFunction1(Object)
+Browser("name:=Sign in to Skype").Close
+End Function 
+ 

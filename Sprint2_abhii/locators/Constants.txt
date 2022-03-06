@@ -1,0 +1,40 @@
+'Constants for login
+dim br,brpg
+Set br=Browser("name:=Sign in to Skype")
+Set brpg=Browser("name:=Sign in to Skype").Page("title:=Sign in to Skype")
+logo="file name:=44_08ed657e48f1458641b5f879d82004cd.png"
+Welcome="xpath:=//DIV[@data-text-as-pseudo-element='Welcome, Nirmal']"
+U1="acc_name:=Nirmal Rawat"
+U2="type:=submit"
+email="name:=loginfmt"
+next_="type:=submit"
+password="name:=passwd"
+sign_in="name:=Sign in"
+'Starting a new conversation
+sc="acc_name:=Start a conversation"
+search="acc_name:=Search"
+skypeid="xpath:=//DIV[@data-text-as-pseudo-element='nirmal.rawat86']"
+ms="xpath:=(//DIV[@data-offset-key='0-0-0'])[2]"
+send="title:=Send message"
+
+Dim B1,BP1,B2,BP2
+Set B1=Browser("name:=.*Skype")
+Set BP1=Browser("name:=.*Skype").Page("title:=.*Skype")
+UpdateProfile="title:=Update profile picture"
+Set B2=Browser("name:=.*Skype.*")
+Set BP2=Browser("name:=.*Skype.*").Page("title:=.*Skype.*")
+UploadPhoto="acc_name:=Upload Photo"
+Moreoptions="acc_name:=More options"
+Settings="acc_name:=Settings"
+Yourprofile="acc_name:=Your profile, Manage how you are seen on Skype"
+Editprofile="acc_name:=Edit profile"
+Name="html id:=nickname"
+City="html id:=city"
+State="html id:=province"
+Country="html id:=country"
+bdate="html id:=bdayDay"
+bmonth="html id:=bdayMonth"
+byear="html id:=bdayYear"
+Gender="html id:=gender"
+Save="xpath:=(//A[@href='#'])[9]"
+feedback="xpath:=//DIV[@id='feedback']/DIV[1]/DIV[1]"

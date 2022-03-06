@@ -1,0 +1,92 @@
+'Constants for login
+dim br,brpg
+Set br=Browser("name:=Sign in to Skype")
+Set brpg=Browser("name:=Sign in to Skype").Page("title:=Sign in to Skype")
+logo="file name:=44_08ed657e48f1458641b5f879d82004cd.png"
+Welcome="xpath:=//DIV[@data-text-as-pseudo-element='Welcome, Nirmal']"
+U1="acc_name:=Nirmal Rawat"
+U2="type:=submit"
+email="name:=loginfmt"
+next_="type:=submit"
+password="name:=passwd"
+sign_in="name:=Sign in"
+
+'Constants for log out
+signout="acc_name:=Sign out"
+
+
+'Constants for Customizing setting
+Appearance="acc_name:=Appearance"
+Mint="acc_name:=Mint"
+AV="acc_name:=Audio & Video"
+msg="acc_name:=Messaging"
+LargeEmoticons="acc_name:=Large emoticons, Make single emoticons larger in chat."
+Ns="acc_name:=Notifications"
+Reactions="acc_name:=Reactions, Receive push notifications when someone reacts to your message."
+Closesettings="acc_name:=Close"
+
+
+
+'Starting a new conversation
+sc="acc_name:=Start a conversation"
+search="acc_name:=Search"
+skypeid="xpath:=//DIV[@data-text-as-pseudo-element='nirmal.rawat86']"
+ms="xpath:=(//DIV[@data-offset-key='0-0-0'])[2]"
+send="title:=Send message"
+
+'Sharing file and contacts
+Share_contact="acc_name:=Send contacts to this chat"
+Contact="value:=Aman Ojha"
+Send_contact="acc_name:=Send"
+Share_file="acc_name:=Add files"
+Send_file="acc_name:=Send message"
+
+'New Group chat
+NewChat="acc_name:=New Chat"
+NewGroupChat="xpath:=(//BUTTON[@role='menuitem'])[1]"
+GroupChatName="acc_name:=Group Name: "
+Done="acc_name:=Done"
+
+'Host a meeting with meet now
+MeetNow="acc_name:=Meet Now"
+HostMeeting="acc_name:=Host a meeting"
+MeetingTitle="xpath:=//INPUT[@dir='auto']"
+StartMeeting="acc_name:=Start Meeting"
+EndCall="acc_name:=End Call"
+
+'Check Notification
+Check_Notification="acc_name:=Notifications.*"
+
+
+Dim B1,BP1,B2,BP2
+Set B1=Browser("name:=.*Skype")
+Set BP1=Browser("name:=.*Skype").Page("title:=.*Skype")
+UpdateProfile="title:=Update profile picture"
+
+'Update Profile
+Set B2=Browser("name:=.*Skype.*")
+Set BP2=Browser("name:=.*Skype.*").Page("title:=.*Skype.*")
+UploadPhoto="acc_name:=Upload Photo"
+MOpt="acc_name:=More options"
+Settings="acc_name:=Settings"
+Yourprofile="acc_name:=Your profile, Manage how you are seen on Skype"
+Editprofile="acc_name:=Edit profile"
+Name="html id:=nickname"
+City="html id:=city"
+State="html id:=province"
+Country="html id:=country"
+bdate="html id:=bdayDay"
+bmonth="html id:=bdayMonth"
+byear="html id:=bdayYear"
+Gender="html id:=gender"
+Save="xpath:=(//A[@href='#'])[9]"
+feedback="xpath:=//DIV[@id='feedback']/DIV[1]/DIV[1]"
+
+'Group chat
+Dim a(3)
+a(0)="name:=Supratick Dey"
+a(1)="name:=Ankit Upadhyay"
+a(2)="name:=Aman Ojha"
+a(3)="name:=Abhishek Soni.*"
+
+moreoptions="xpath:=//DIV[1]/DIV[1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][1]/DIV[@role='none'][2]/DIV[@role='none'][1]/DIV[@role='none'][2]/BUTTON[@role='button'][1]"
